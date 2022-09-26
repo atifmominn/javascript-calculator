@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Share Tech Mono' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/b255651980.js" crossorigin="anonymous"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="calculator">
+        <div>
+            <div id="output"><div id="actual-output"></div></div>
+            <div id="display"><div id="actual-input"></div></div>
+        </div>
+        
+        <div>
+            <button class="one" id="clear" onclick="clearValue()">AC</button>
+            <button class="opp" id="divide" onclick="useOperator(this.id)">/</button>
+            <button class="opp" id="multiply" onclick="useOperator(this.id)">*</button>
+            <button class="one" id="seven" onclick="inputUpdate(this.id)">7</button>
+            <button class="one" id="eight" onclick="inputUpdate(this.id)">8</button>
+            <button class="one" id="nine" onclick="inputUpdate(this.id)">9</button>
+            <button class="opp" id="subtract" onclick="useOperator(this.id)">-</button>
+            <button class="one" id="four" onclick="inputUpdate(this.id)">4</button>   
+            <button class="one" id="five" onclick="inputUpdate(this.id)">5</button>
+            <button class="one" id="six" onclick="inputUpdate(this.id)">6</button>
+            <button class="opp" id="add" onclick="useOperator(this.id)">+</button>
+            <div>
+                <button class="one" id="one" onclick="inputUpdate(this.id)">1</button>
+                <button class="one" id="two" onclick="inputUpdate(this.id)">2</button>
+                <button class="one" id="three" onclick="inputUpdate(this.id)">3</button>
+                <button id="zero" onclick="inputUpdate(this.id)">0</button>
+                <button class="one" id="decimal" onclick="inputUpdate(this.id)">.</button>
+            </div>
+            <div>
+                <button id="equals" onclick="useOperator(this.id)">=</button>
+            </div>
+            
+        </div>
+        
+    </div>
+    <h1>by <span id="my-name">atif momin</span></h1>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

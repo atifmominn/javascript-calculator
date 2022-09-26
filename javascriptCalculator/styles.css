@@ -1,0 +1,151 @@
+:root {
+    --height:100px;
+}
+
+body {
+    background-color: #17111f;
+    
+}
+
+#calculator {
+    background-color: black;
+    width: 400px;
+    height:600px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: solid black 1px;
+}
+
+#output {
+    width:396px;
+    height:50px;
+    background-color: black;
+    font-family:"Share Tech Mono",monospace;
+    color:indianred;
+    text-align: right;
+    font-size:1.5rem;
+}
+
+#display {
+    width:396px;
+    height:50px;
+    background-color: black;
+    font-family:"Share Tech Mono",monospace;
+    color:white;
+    text-align: right;
+    font-size:2rem;
+}
+
+#actual-input {
+    padding-top:5px;
+    padding-right:5px;
+}
+
+#actual-output {
+    padding-top:20px;
+    padding-right:5px;
+}
+
+#clear {
+    width:200px;
+    height:var(--height);
+    border: solid black 1px;
+    background-color: rgb(37, 37, 153);
+}
+
+#clear:hover {
+    border:solid white 1px;
+    color:#17111f;
+}
+
+#zero {
+    width:200px;
+    height:var(--height);
+    border: solid black 1px;
+    background-color: rgb(29, 29, 29);
+    margin-right:-4px;
+}
+
+#zero:hover {
+    border:solid white 1px;
+    color:#17111f;
+}
+
+.opp {
+    background-color: rgb(57, 49, 49);
+    width:100px;
+    height:var(--height);
+    border: solid black 1px;
+    margin-right:-4px;
+}
+
+.opp:hover {
+    border:solid white 1px;
+    color:#17111f;
+}
+
+#equals {
+    width:100px;
+    height:200px;
+    border: solid black 1px;
+    background-color: rgb(169, 15, 46);
+    position:relative;
+    top:-200px;
+    left:300px;
+}
+
+#equals:hover {
+    border:solid white 1px;
+    color:#17111f;
+}
+
+button {
+    color:white;
+    font-family:"Share Tech Mono",monospace;
+    font-size:1.5rem;
+}
+
+button:hover {
+    font-weight:bold;
+}
+
+.one {
+    width:100px;
+    height:var(--height);
+    border: solid black 1px;
+    background-color:rgb(29, 29, 29);
+    margin-right:-4px;
+}
+
+.one:hover {
+    border:solid white 1px;
+    color:black;
+}
+
+
+h1 {
+    text-align:center;
+    font-family:"Share Tech Mono",monospace;
+    color:white;
+    font-size:1rem;
+    position:absolute;
+    top:90%;
+    left:50%;
+    transform: translate(-50%);
+}
+
+#my-name {
+    position:relative;
+    right:0px;
+    animation-name: atif;
+    animation-duration:5s;
+}
+
+@keyframes atif {
+    from {right:-800px;}
+    to {right:0px;}
+}
